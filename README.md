@@ -11,7 +11,7 @@ graph TD
     A[Frontend: Streamlit UI] -->|User Inputs API Key & Uploads Docs| B[Backend: FastAPI Server]
     B --> C[Initialize Agentic RAG System]
     B --> D[Document Upload & Processing]
-    D --> E[Text Extraction (.pdf/.docx/.txt)]
+    D --> E["Text Extraction (.pdf, .docx, .txt)"]
     E --> F[Chunking & Smart Splitting]
     F --> G[Embedding via SentenceTransformer]
     G --> H[Store in FAISS Vector DB]
